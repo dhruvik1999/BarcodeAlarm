@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/Ttime"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/bar"
+        android:gravity="center"
+        android:text="9 : 41"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/disc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/Ttime"
+        android:gravity="left"
+        android:text="Remainning 3 hours and 36 minutes" />
+
+    <Switch
+        android:id="@+id/activate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bar"
+        android:layout_toEndOf="@+id/Ttime"
+        android:gravity="center"
+        android:text="activate Alarm" />
+
+    <Switch
+        android:id="@+id/Ebarcode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/activate"
+        android:layout_toEndOf="@+id/Ttime"
+        android:gravity="center"
+        android:text="Enable Barcode" />
+
+
+</RelativeLayout>
